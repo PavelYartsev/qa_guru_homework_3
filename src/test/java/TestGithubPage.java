@@ -18,7 +18,6 @@ public class TestGithubPage {
         $("h1").shouldHave(text("selenide / selenide"));
         $$("ul.UnderlineNav-body li").findBy(text("Wiki")).click();
         $(".application-main").shouldHave(text("Welcome to the selenide wiki!"));
-        $(".wiki-rightbar ul").shouldHave(text("SoftAssertions")).shouldBe(visible);
         $$(".wiki-rightbar ul li").findBy(text("SoftAssertions")).click();
         $(".application-main").shouldHave(text("How to soft assert using Selenide"));
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class")).shouldBe(visible);
